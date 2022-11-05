@@ -1,0 +1,85 @@
+commit 951db086654b2717205615cc38dfd705e2423ddf
+Author: Tommi Kiiski <kiiski.tommi@hotmail.com>
+Date:   Sat Nov 5 09:26:40 2022 +0200
+
+    harjoittelua
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 1e0907d55c2c50ce5835332c600293049e904e61
+Author: Tommi Kiiski <kiiski.tommi@hotmail.com>
+Date:   Sat Nov 5 09:20:50 2022 +0200
+
+    uusi kansio
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 855b95cf2213d31419c2ee4ff70fe44401bb11ef
+Author: Tommi Kiiski <kiiski.tommi@hotmail.com>
+Date:   Sat Nov 5 09:13:50 2022 +0200
+
+    "sitä ja tätä"
+
+ eka.txt    | 6 +++---
+ kolmas.txt | 2 +-
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+
+commit 7e95ab4db2d9ea848cb2fc6958767b7b97b94383
+Author: Tommi Kiiski <kiiski.tommi@hotmail.com>
+Date:   Sat Nov 5 09:00:53 2022 +0200
+
+    uudelleennimeäminen
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 11ec56e4831b50af0d94e9d250b66ee7995e68a7
+Author: Tommi Kiiski <kiiski.tommi@hotmail.com>
+Date:   Sat Nov 5 08:57:30 2022 +0200
+
+    poisto
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 6b8e228c28699cf1b5645b67cc825c696c44c101
+Author: Tommi Kiiski <kiiski.tommi@hotmail.com>
+Date:   Sat Nov 5 08:53:01 2022 +0200
+
+    poisto ja lisäys
+
+ tiedosto.txt | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+commit 1a820ad36be4e13266534c52f1bd4f56a7ad366a
+Author: Tommi Kiiski <kiiski.tommi@hotmail.com>
+Date:   Sat Nov 5 08:50:28 2022 +0200
+
+    paljon tekstiä
+
+ tiedosto.txt | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+
+commit 8c24b191d590b021864a28bf71db11c6b2649f5a
+Author: Tommi Kiiski <kiiski.tommi@hotmail.com>
+Date:   Thu Nov 3 11:20:37 2022 +0200
+
+    lisätty jotain.txt
+
+ stuff/jotain.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 42eb42d62d8a37712b8b1a2ec3e05967e2f8f275
+Author: Tommi Kiiski <kiiski.tommi@hotmail.com>
+Date:   Thu Nov 3 11:14:07 2022 +0200
+
+    muutoksia
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
