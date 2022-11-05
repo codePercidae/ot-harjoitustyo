@@ -83,3 +83,5 @@ Date:   Thu Nov 3 11:14:07 2022 +0200
  kolmas.txt | 1 +
  toinen.txt | 1 +
  2 files changed, 2 insertions(+)
+
+tämä tuottaa virheen
