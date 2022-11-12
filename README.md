@@ -8,6 +8,8 @@ Tässä varmaankin tulee olemaan jotain selostusta _harjoitustyöstä_.
 
 [Vaatimusmäärittely](https://github.com/codePercidae/ot-harjoitustyo/blob/main/dokumentaatio/vaatimusmaarittely.md)
 
+[Tuntikirjanpito](https://github.com/codePercidae/ot-harjoitustyo/blob/main/dokumentaatio/tuntikirjanpito.md)
+
 # Suunnittelu
 
 # Testaus
