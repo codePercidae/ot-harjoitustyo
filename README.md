@@ -6,6 +6,8 @@ Tässä varmaankin tulee olemaan jotain selostusta _harjoitustyöstä_.
 **Aihe** on vielä vähän hakusessa mutta ***eikohän se siitä***.
 :+1:
 
+[Vaatimusmäärittely](https://github.com/codePercidae/ot-harjoitustyo/blob/main/dokumentaatio/vaatimusmaarittely.md)
+
 # Suunnittelu
 
 # Testaus
