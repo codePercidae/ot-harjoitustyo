@@ -11,10 +11,10 @@ Idea on saanut inspiraation Marshall Goldsmithin kirjasta *Triggers: Creating Be
 That Lasts*.
 
 ## Perusversion tarjoama toiminnallisuus
--Käyttäjä voi antaa sovellukselle *päivittäisiä kysymyksiä*, jotka sovellus tallentaa
--Sovellus kysyy käyttäjän määrittelemät kysymykset käyttäjältä tämän niin toivoessa ja tallentaa käyttäjän vastaukset
--Käyttäjä voi arkistoida kysymyksiä, jolloin niitä ei enää esitetä käyttäjälle.
+- Käyttäjä voi antaa sovellukselle *päivittäisiä kysymyksiä*, jotka sovellus tallentaa
+- Sovellus kysyy käyttäjän määrittelemät kysymykset käyttäjältä tämän niin toivoessa ja tallentaa käyttäjän vastaukset
+- Käyttäjä voi arkistoida kysymyksiä, jolloin niitä ei enää esitetä käyttäjälle.
 
 ## Jatkokehitysideoita
--Käyttäjä voi katsella aikaisempia vastauksia
--Käyttäjä näkee kysymyksien yhteydessä statistiikkaa aikaisemmista vastauksista
+- Käyttäjä voi katsella aikaisempia vastauksia
+- Käyttäjä näkee kysymyksien yhteydessä statistiikkaa aikaisemmista vastauksista
