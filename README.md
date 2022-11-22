@@ -1,4 +1,4 @@
-#Daily Questions -sovellus
+# Daily Questions -sovellus
 
 Sovelluksen avulla käyttäjä pystyy pitämään kirjaa omista elämäntapamuutoksistaan ja arvioimaan niiden edistymistä.
 
