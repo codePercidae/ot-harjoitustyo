@@ -1,23 +1,57 @@
-# Ohjelmistotekniikka
+#Daily Questions -sovellus
 
-## Harjoitustyö
+Sovelluksen avulla käyttäjä pystyy pitämään kirjaa omista elämäntapamuutoksistaan ja arvioimaan niiden edistymistä.
 
-Tässä varmaankin tulee olemaan jotain selostusta _harjoitustyöstä_.
-**Aihe** on vielä vähän hakusessa mutta ***eikohän se siitä***.
-:+1:
+## Dokumentaatio
+- [Vaatimusmäärittely](https://github.com/codePercidae/ot-harjoitustyo/blob/main/dokumentaatio/vaatimusmaarittely.md)
+- [Tuntikirjanpito](https://github.com/codePercidae/ot-harjoitustyo/blob/main/dokumentaatio/tuntikirjanpito.md)
+- [Changelog](https://github.com/codePercidae/ot-harjoitustyo/blob/main/changelog.md)
 
-[Vaatimusmäärittely](https://github.com/codePercidae/ot-harjoitustyo/blob/main/dokumentaatio/vaatimusmaarittely.md)
+## Asennus
 
-[Tuntikirjanpito](https://github.com/codePercidae/ot-harjoitustyo/blob/main/dokumentaatio/tuntikirjanpito.md)
+1. Asenna riippuvuudet komennolla:
 
-# Suunnittelu
+```bash
+poetry install
+```
 
-# Testaus
+2. Suorita vaadittavat alustustoimenpiteet komennolla:
 
-## Tehtävät
+```bash
+poetry run invoke build
+```
 
-### Viikko 1
+3. Käynnistä sovellus komennolla:
 
-[Gitlog tuloste](https://github.com/codePercidae/ot-harjoitustyo/blob/main/laskarit/viikko1/gitlog.txt)
+```bash
+poetry run invoke start
+```
 
-[Tree komennon tuloste](https://github.com/codePercidae/ot-harjoitustyo/blob/main/laskarit/viikko1/komentorivi.txt)
+## Komentorivitoiminnot
+
+### Ohjelman suorittaminen
+
+Ohjelman pystyy suorittamaan komennolla:
+
+```bash
+poetry run invoke start
+```
+
+### Testaus
+
+Testit suoritetaan komennolla:
+
+```bash
+poetry run invoke test
+```
+
+### Testikattavuus
+
+Testikattavuusraportin voi generoida komennolla:
+
+```bash
+poetry run invoke coverage-report
+```
+
+Raportti generoituu _htmlcov_-hakemistoon.
+
