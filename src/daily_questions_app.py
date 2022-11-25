@@ -1,4 +1,5 @@
 from question_repository import QuestionRepository
+from database_connection import get_database_connection
 
 GUIDE="""To save a new daily question, input n\n
 To grade your daily questions, input g\n
@@ -29,15 +30,18 @@ class Daily_questions_app:
 
     def new_question(self):
         question = input("Please insert the question here:\n")
-        self.repository.add_question(question)
+        self.repository.add_question_db(question)
+        print("Question added!")
         
 
     def grade_questions(self):
         print("Evaluate your performance on each question from 1 to 10.")
+
         for question in self.repository.get_questions():
             print(question)
-            grade = int(input("Input grade here: "))
-            self.repository.new_grade(question, grade)
+            question = question.replace(" ", "")
+            grade = input("Input grade here: ")
+            self.repository.new_grade_db(question, grade)
 
         print("All questions aswered!")
 
