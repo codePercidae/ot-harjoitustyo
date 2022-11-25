@@ -1,17 +1,17 @@
-#This class will implement the database for the application. Currently no permanent storage of data.
+from datetime import date
+from initialize_database import init_database
 
 class QuestionRepository:
     def __init__(self) -> None:
-        self.questions = {}
+        self.connection = init_database()
 
-#Active test
-    def add_question(self, question):
-        self.questions[question]=[]
+    def add_question_db(self, question):
+        self.connection.execute(f"INSERT INTO Questions (question) VALUES ('{question}')")
+        question_id = self.connection.execute(f"SELECT * FROM Questions WHERE question='{question}").fetchone()[0]
+        self.connection.execute(f"CREATE TABLE Question_{question_id} (id INTEGER PRIMARY KEY, date DATE, grade INTEGER)")
 
-#No test
-    def get_questions(self):
-        return self.questions
-    
-#No test
-    def new_grade(self, question, grade):
-        self.questions[question].append(grade)
+    def get_questions_db(self):
+        return self.connection.execute("SELECT * FROM Questions").fetchall()
+            
+    def new_grade_db(self, question, grade):
+        self.connection.execute(f"INSERT INTO {question} (date, grade) VALUES ({date.today()}, {grade})")
