@@ -1,11 +1,10 @@
 import sqlite3
 import os
 
-connection = sqlite3.connect("testi.db")
-connection.isolation_level = None
-
+dirname = os.path.dirname(__file__)
+print(dirname)
+connection = sqlite3.connect(os.path.join(dirname, "data", "database.sqlite"))
+connection.row_factory = sqlite3.Row
 
 def get_database_connection():
-    if os.path.exists("testi.db"):
-        print("connect")    
     return connection
