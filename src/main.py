@@ -1,7 +1,8 @@
-from daily_questions_app import Daily_questions_app
+from daily_questions_app import DailyQuestionsApp
+
 
 def main():
-    app = Daily_questions_app()
+    app = DailyQuestionsApp()
     app.start()
 
 
