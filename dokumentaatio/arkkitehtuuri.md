@@ -4,7 +4,7 @@
 
 ```mermaid
 classDiagram
-	DailyQuestionsApp "1" -> "1" QuestionRepository
+	DailyQuestionsApp "1" --> "1" QuestionRepository
 	class DailyQuestionsApp{
 		repository
 		}
