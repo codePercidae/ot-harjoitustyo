@@ -1,5 +1,4 @@
-from database_connection import get_database_connection
-import os
+from sqlite3 import *
 
 def create_table(connection):
     cursor = connection.cursor()
@@ -11,15 +10,15 @@ def remove_database(connection):
     cursor = connection.cursor()
     cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
     if cursor.fetchall():
-        tables = cursor.execute("SELECT * FROM Questions").fetchall()
-        for table in tables:
-            cursor.execute(f"DROP TABLE IF EXISTS {table[1]}")
+        cursor.execute("SELECT * FROM Questions")
+        rows = cursor.fetchall()
+        for id in [row["id"] for row in rows]:
+            cursor.execute(f"DROP TABLE IF EXISTS Question_{id}")
         cursor.execute("DROP TABLE Questions")
         connection.commit()
         
 
-def init_database():
-    connection = get_database_connection()
+def init_database(connection):
     remove_database(connection)
     create_table(connection)
     
