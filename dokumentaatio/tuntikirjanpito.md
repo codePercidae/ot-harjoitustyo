@@ -2,9 +2,12 @@
 
 | päivä | aika | mitä tein  |
 | :----:|:-----|:------| 
-| 12.10.|   1  |Vaatimusmäärittely|
-| 20.10.|  1,5 |Perustoiminnallisuus ja Tkinterin opettelu|
-| 21.10.|   2  |Perustoiminnallisuus|
-| 22.10.|   2  |Tietokannan toiminnallisuus|
-| 24.10.|   2  |Tietokannan toiminnallisuus|
-| 25.10.|   2  |Tietokannan ja sovelluksen integrointi|
+| 12.11.|   1  |Vaatimusmäärittely|
+| 20.11.|  1,5 |Perustoiminnallisuus ja Tkinterin opettelu|
+| 21.11.|   2  |Perustoiminnallisuus|
+| 22.11.|   2  |Tietokannan toiminnallisuus|
+| 24.11.|   2  |Tietokannan toiminnallisuus|
+| 25.11.|   2  |Tietokannan ja sovelluksen integrointi|
+| 26.11.|  1,5 |Tietokannan integrointi|
+| 29.11.|   3  |Tietokannan viimeistely, toiminnallsuuden lisääminen|
+|  yht  |  15  |  |
