@@ -6,6 +6,7 @@ Sovelluksen avulla käyttäjä pystyy pitämään kirjaa omista elämäntapamuut
 - [Vaatimusmäärittely](https://github.com/codePercidae/ot-harjoitustyo/blob/main/dokumentaatio/vaatimusmaarittely.md)
 - [Tuntikirjanpito](https://github.com/codePercidae/ot-harjoitustyo/blob/main/dokumentaatio/tuntikirjanpito.md)
 - [Changelog](https://github.com/codePercidae/ot-harjoitustyo/blob/main/changelog.md)
+- [Arkkitehtuuri](https://github.com/codePercidae/ot-harjoitustyo/blob/main/dokumentaatio/arkkitehtuuri.md)
 
 ## Asennus
 
@@ -55,3 +56,10 @@ poetry run invoke coverage-report
 
 Raportti generoituu _htmlcov_-hakemistoon.
 
+### Pylint
+
+Tiedoston [.pylintrc](./.pylintrc) määrittelemät tarkistukset voi suorittaa komennolla:
+
+```bash
+poetry run invoke lint
+```
