@@ -18,4 +18,8 @@ def coverage_report(ctx):
 
 @task
 def format(ctx):
-    ctx.run("autopep8 --inplace --recursive src")
+    ctx.run("autopep8 --in-place --recursive src")
+
+@task 
+def build(ctx):
+    ctx.run("python3 src/initialize_database.py", pty=True)
