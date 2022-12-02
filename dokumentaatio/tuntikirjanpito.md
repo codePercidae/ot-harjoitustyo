@@ -10,4 +10,5 @@
 | 25.11.|   2  |Tietokannan ja sovelluksen integrointi|
 | 26.11.|  1,5 |Tietokannan integrointi|
 | 29.11.|   3  |Tietokannan viimeistely, toiminnallsuuden lisääminen|
-|  yht  |  15  |  |
+|  2.12.|   2  |Tkinterin opettelu ja graafinen käyttöliittymä|
+|  yht  |  17  |  |
