@@ -12,4 +12,6 @@
 | 29.11.|   3  |Tietokannan viimeistely, toiminnallsuuden lisääminen|
 |  2.12.|   2  |Tkinterin opettelu ja graafinen käyttöliittymä|
 |  3.12.|   3  |Graafisen käyttöliittymän kehitys|
-|  yht  |  20  |  |
+|  4.12.|   1  |Graafisen käyttöliittymän kehitys|
+|  5.12.|   1  |Koodin siistimistä ja testikattavuuden lisäys|
+|  yht  |  22  |  |
