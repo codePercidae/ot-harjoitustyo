@@ -1,12 +1,6 @@
 from question_repository import QuestionRepository
 from interface import Interface
 
-GUIDE = """To save a new daily question, input n\n
-To grade your daily questions, input g\n
-To see the previus answers, input s\n
-To remove all entries, input FORMAT\n
-To exit input, x\n"""
-
 
 class DailyQuestionsApp:
 
@@ -19,7 +13,7 @@ class DailyQuestionsApp:
 
     def new_question(self, question):
         return self.repository.add_question(question)
-    
+
     def transmit_questions(self):
         return self.repository.get_questions()
 
