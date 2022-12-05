@@ -7,6 +7,7 @@ Sovelluksen avulla käyttäjä pystyy pitämään kirjaa omista elämäntapamuut
 - [Tuntikirjanpito](https://github.com/codePercidae/ot-harjoitustyo/blob/main/dokumentaatio/tuntikirjanpito.md)
 - [Changelog](https://github.com/codePercidae/ot-harjoitustyo/blob/main/dokumentaatio/changelog.md)
 - [Arkkitehtuuri](https://github.com/codePercidae/ot-harjoitustyo/blob/main/dokumentaatio/arkkitehtuuri.md)
+- [Viikon 5 Release](https://github.com/codePercidae/ot-harjoitustyo/releases/tag/viikko5)
 
 ## Asennus
 
