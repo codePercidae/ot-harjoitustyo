@@ -1,4 +1,5 @@
 from question_repository import QuestionRepository
+from interface import Interface
 
 GUIDE = """To save a new daily question, input n\n
 To grade your daily questions, input g\n
@@ -11,44 +12,19 @@ class DailyQuestionsApp:
 
     def __init__(self) -> None:
         self.repository = QuestionRepository()
+        self.gui = Interface(self)
 
-    def start(self):
-        print(GUIDE)
+    def start_gui(self):
+        self.gui.activate()
 
-        while True:
-            command = input()
+    def new_question(self, question):
+        return self.repository.add_question(question)
+    
+    def transmit_questions(self):
+        return self.repository.get_questions()
 
-            if command == "n":
-                self.new_question()
-            elif command == "g":
-                self.grade_questions()
-            elif command == "s":
-                self.show_answers()
-            elif command == "FORMAT":
-                double_check = input(
-                    """Are you sure you want to delete all
-                    your questions and answers? y/n: """) == "y"
-                if double_check == "y":
-                    self.empty_database()
-            elif command == "x":
-                break
-            else:
-                print("invalid command")
-
-    def new_question(self):
-        question = input("Please insert the question here:\n")
-        self.repository.add_question(question)
-        print("Question added!")
-
-    def grade_questions(self):
-        print("Evaluate your performance on each question from 1 to 10.")
-
-        for question in self.repository.get_questions():
-            print(question[1])
-            grade = input("Input grade here: ")
-            self.repository.new_grade(question[0], grade)
-
-        print("All questions aswered!")
+    def grade_question(self, question, grade):
+        self.repository.new_grade(question, grade)
 
     def show_answers(self):
         questions = self.repository.get_questions()
