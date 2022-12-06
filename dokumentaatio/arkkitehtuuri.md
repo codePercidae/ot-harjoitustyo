@@ -21,9 +21,12 @@ Kuvataan ohjelman päätoiminnallisuuksia sekvenssikaavioiden avulla.
 
 ```mermaid
 sequenceDiagram
-	Interface-->DailyQuestionApp: "new_question('New question')"
-	DailyQuestionApp-->QuesionRepository: "repository.add_question('New question')"
-	QuestionRepository-->DailyQuestionApp: "True"
-	DailyQuestionApp-->Interface: "True"
+	actor User
+	User->>Interface: Insert 'New question'
+	Interface->>DailyQuestionApp: new_question('New question')
+	DailyQuestionApp->>QuestionRepository: repository.add_question('New question')
+	QuestionRepository-->>DailyQuestionApp: True
+	DailyQuestionApp-->>Interface: True
+	Interface-->>User: "Question added!"
 
 ```
