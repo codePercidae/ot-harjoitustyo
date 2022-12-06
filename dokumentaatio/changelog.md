@@ -10,3 +10,8 @@
 - tiedon pysyväistallenne toteutettu tietokannalla
 - käyttäjä voi katsella aikaisempia vastauksia
 
+## viikko 5
+
+- ohjelmalla nyt visuaalinen käyttöliittymä
+- aikaisempien vastauksien katselu ei vielä mahdollista käyttöliittymämuutoksen vuoksi
+- testikattavuutta lisätty
