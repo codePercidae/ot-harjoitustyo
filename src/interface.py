@@ -58,8 +58,7 @@ class Interface:
             messagebox.showinfo("Success", "Question added!")
         else:
             messagebox.showerror(
-                "ERROR", """Something went wrong! Maybe the question
-                 already exists or developer has managed to corrupt the filesystem ¯\_(ツ)_/¯")""")
+                "ERROR", """Something went wrong! Invalid question or given question already exists!""")
         self.question_var.set("")
 
     def empty_data(self):

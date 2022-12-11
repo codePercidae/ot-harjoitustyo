@@ -13,7 +13,10 @@ class DailyQuestionsApp:
         self.main_gui.activate()
 
     def new_question(self, question):
-        return self.repository.add_question(question)
+        if len(question) == 0:
+            return False
+        else:
+            return self.repository.add_question(question)
     
     def grade_window(self):
         self.main_gui.kill()
@@ -33,14 +36,6 @@ class DailyQuestionsApp:
     def kill_grade_gui(self):
         self.grade_gui.kill()
         self.main_gui.activate()
-
-
-    def show_answers(self):
-        questions = self.repository.get_questions()
-        for question in questions:
-            values = self.repository.get_values(question[0])
-            print(question[1])
-            print(str(values) + "\n")
 
     def empty_database(self):
         self.repository.initialize_database()
