@@ -41,6 +41,8 @@ class Interface:
         self.submit_btn = tk.Button(
             self.root, text="add question", command=self.store_entry, pady=10)
 
+        self.status_btn = tk.Button(text="Question status", command=self.parent.status_window)
+
     def packer(self):
         self.greeting.pack()
 
@@ -51,6 +53,8 @@ class Interface:
         self.new_question.pack()
 
         self.submit_btn.pack()
+        
+        self.status_btn.pack()
 
     def store_entry(self):
         question = self.question_var.get()

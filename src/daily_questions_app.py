@@ -1,15 +1,15 @@
 from question_repository import QuestionRepository
 from interface import Interface
 from grade_interface import GradeInterface
-
+from status_interface import StatusInterface
 
 class DailyQuestionsApp:
 
     def __init__(self) -> None:
         self.repository = QuestionRepository()
-        self.main_gui = Interface(self)
 
     def start_gui(self):
+        self.main_gui = Interface(self)
         self.main_gui.activate()
 
     def new_question(self, question):
@@ -26,6 +26,9 @@ class DailyQuestionsApp:
     def transmit_questions(self):
         return self.repository.get_questions()
 
+    def transmit_answers(self, question_id):
+        return self.repository.get_values(question_id)
+
     def grade_question(self, question_id, grade):
         if grade in [str(i) for i in range(1, 11)]:
             self.repository.new_grade(question_id, grade)
@@ -33,9 +36,18 @@ class DailyQuestionsApp:
         else:
             return False
 
+    def status_window(self):
+        self.main_gui.kill()
+        self.status_gui = StatusInterface(self)
+
+
+    def kill_status_gui(self):
+        self.status_gui.kill()
+        self.start_gui()
+
     def kill_grade_gui(self):
         self.grade_gui.kill()
-        self.main_gui.activate()
+        self.start_gui()
 
     def empty_database(self):
         self.repository.initialize_database()
