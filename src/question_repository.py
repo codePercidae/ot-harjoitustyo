@@ -30,8 +30,6 @@ class QuestionRepository:
         except OperationalError:
             return False
 
-    # returns all the contents from Questions table
-
     def get_questions(self):
         cursor = self.connection.cursor()
         cursor.execute("SELECT * FROM Questions")

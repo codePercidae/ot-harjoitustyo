@@ -1,24 +1,39 @@
 from question_repository import QuestionRepository
 from interface import Interface
+from grade_interface import GradeInterface
 
 
 class DailyQuestionsApp:
 
     def __init__(self) -> None:
         self.repository = QuestionRepository()
-        self.gui = Interface(self)
+        self.main_gui = Interface(self)
 
     def start_gui(self):
-        self.gui.activate()
+        self.main_gui.activate()
 
     def new_question(self, question):
         return self.repository.add_question(question)
+    
+    def grade_window(self):
+        self.main_gui.kill()
+        self.grade_gui = GradeInterface(self)
+        self.grade_gui.activate()
 
     def transmit_questions(self):
         return self.repository.get_questions()
 
-    def grade_question(self, question, grade):
-        self.repository.new_grade(question, grade)
+    def grade_question(self, question_id, grade):
+        if grade in [str(i) for i in range(1, 11)]:
+            self.repository.new_grade(question_id, grade)
+            return True
+        else:
+            return False
+
+    def kill_grade_gui(self):
+        self.grade_gui.kill()
+        self.main_gui.activate()
+
 
     def show_answers(self):
         questions = self.repository.get_questions()
