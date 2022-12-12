@@ -14,4 +14,9 @@
 |  3.12.|   3  |Graafisen käyttöliittymän kehitys|
 |  4.12.|   1  |Graafisen käyttöliittymän kehitys|
 |  5.12.|   1  |Koodin siistimistä ja testikattavuuden lisäys|
-|  yht  |  22  |  |
+|  6.12.|   1  |Pieniä korjauksia|
+|  8.12.|   3  |Epätoivoisia yrityksiä saada GUI toimimaan|
+|  9.12.|   1  |Lisää epätoivoa|
+| 11.12.|   2  |Gui toimii ja lisää toiminnallisuutta|
+| 12.12.|   3  |Lisää toiminnallisuutta ja testejä|
+|  yht  |  28  |  |
