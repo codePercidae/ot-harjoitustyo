@@ -7,9 +7,9 @@ class DailyQuestionsApp:
 
     def __init__(self) -> None:
         self.repository = QuestionRepository()
-        self.main_gui = Interface(self)
 
     def start_gui(self):
+        self.main_gui = Interface(self)
         self.main_gui.activate()
 
     def new_question(self, question):
