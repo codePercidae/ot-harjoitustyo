@@ -33,7 +33,8 @@ class QuestionRepository:
 
     def deactive(self, question_id):
         cursor = self.connection.cursor()
-        cursor.execute(f"UPDATE Questions SET active=FALSE WHERE id = {question_id}")
+        cursor.execute(
+            f"UPDATE Questions SET active=FALSE WHERE id = {question_id}")
         self.connection.commit()
 
     def new_grade(self, question_id, grade):
