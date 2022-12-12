@@ -1,12 +1,10 @@
 from database_connection import get_database_connection
 
-
 def create_table(connection):
     cursor = connection.cursor()
     cursor.execute(
-        "CREATE TABLE IF NOT EXISTS Questions (id INTEGER PRIMARY KEY, Question TEXT)")
+        "CREATE TABLE IF NOT EXISTS Questions (id INTEGER PRIMARY KEY, Question TEXT, Active BOOL)")
     connection.commit()
-
 
 def remove_database(connection):
     cursor = connection.cursor()
@@ -19,12 +17,10 @@ def remove_database(connection):
         cursor.execute("DROP TABLE Questions")
         connection.commit()
 
-
 def init_database():
     connection = get_database_connection()
     remove_database(connection)
     create_table(connection)
-
 
 if __name__ == "__main__":
     init_database()

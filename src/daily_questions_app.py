@@ -36,10 +36,12 @@ class DailyQuestionsApp:
         else:
             return False
 
+    def archive(self, question_id):
+        self.repository.deactive(question_id)
+
     def status_window(self):
         self.main_gui.kill()
         self.status_gui = StatusInterface(self)
-
 
     def kill_status_gui(self):
         self.status_gui.kill()

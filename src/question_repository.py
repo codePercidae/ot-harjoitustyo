@@ -9,16 +9,11 @@ class QuestionRepository:
     def __init__(self) -> None:
         self.connection = get_database_connection()
 
-    # New questions create new tables where grades are stored.
-    # Tables are named in form Question_id where
-    # id represents the id number given by the Questions table.
-    # Horrible way to implement this, too bad.
-
     def add_question(self, question):
         cursor = self.connection.cursor()
         try:
             cursor.execute(
-                f"INSERT INTO Questions (question) VALUES ('{question}')")
+                f"INSERT INTO Questions (question, active) VALUES ('{question}', TRUE)")
             self.connection.commit()
             question_id = cursor.execute(
                 f"SELECT * FROM Questions WHERE question='{question}'").fetchone()[0]
@@ -32,9 +27,14 @@ class QuestionRepository:
 
     def get_questions(self):
         cursor = self.connection.cursor()
-        cursor.execute("SELECT * FROM Questions")
+        cursor.execute("SELECT * FROM Questions where active=TRUE")
         rows = cursor.fetchall()
         return [(row["id"], row["question"]) for row in rows]
+
+    def deactive(self, question_id):
+        cursor = self.connection.cursor()
+        cursor.execute(f"UPDATE Questions SET active=FALSE WHERE id = {question_id}")
+        self.connection.commit()
 
     def new_grade(self, question_id, grade):
         cursor = self.connection.cursor()
@@ -45,7 +45,7 @@ class QuestionRepository:
     def get_values(self, question_id):
         cursor = self.connection.cursor()
         cursor.execute(f"SELECT * FROM Question_{question_id}")
-        rows = cursor.fetchmany(5)
+        rows = cursor.fetchmany(7)
         return [row["grade"] for row in rows]
 
     def initialize_database(self):
