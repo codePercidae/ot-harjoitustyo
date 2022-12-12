@@ -19,8 +19,16 @@ class TestRepository(unittest.TestCase):
         self.assertEqual(self.repository.get_values(1)[0], 5)
 
     def test_get_questions_functions_correctly(self):
-        self.assertEqual(self.repository.get_questions(), [(1, "New question")])
+        self.assertEqual(self.repository.get_questions(),
+                         [(1, "New question")])
 
     def test_initalize_database_clears_all_data(self):
         self.repository.initialize_database()
+        self.assertEqual(self.repository.get_questions(), [])
+
+    def test_same_question_cant_be_added_twice(self):
+        self.assertEqual(self.repository.add_question("New question"), False)
+
+    def test_deactivate_sets_active_question_to_passive(self):
+        self.repository.deactive(1)
         self.assertEqual(self.repository.get_questions(), [])
