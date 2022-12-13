@@ -13,7 +13,7 @@ class DailyQuestionsApp:
         self.main_gui.activate()
 
     def new_question(self, question):
-        if len(question) == 0:
+        if len(question) == 0 or len(self.transmit_questions()) == 5:
             return False
         return self.repository.add_question(question)
 

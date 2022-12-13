@@ -1,12 +1,12 @@
 from database_connection import get_database_connection
 
-def create_table(connection):
+def _create_table(connection):
     cursor = connection.cursor()
     cursor.execute(
         "CREATE TABLE IF NOT EXISTS Questions (id INTEGER PRIMARY KEY, Question TEXT, Active BOOL)")
     connection.commit()
 
-def remove_database(connection):
+def _remove_database(connection):
     cursor = connection.cursor()
     cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
     if cursor.fetchall():
@@ -19,8 +19,8 @@ def remove_database(connection):
 
 def init_database():
     connection = get_database_connection()
-    remove_database(connection)
-    create_table(connection)
+    _remove_database(connection)
+    _create_table(connection)
 
 if __name__ == "__main__":
     init_database()
