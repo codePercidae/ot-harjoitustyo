@@ -8,4 +8,6 @@ connection.row_factory = sqlite3.Row
 
 
 def get_database_connection():
+    """Palauttaa connection olion, jonka avulla tietokantaan ollaan yhteydessä."""
+    
     return connection
