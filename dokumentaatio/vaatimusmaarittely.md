@@ -12,8 +12,8 @@ That Lasts*.
 ## Perusversion tarjoama toiminnallisuus
 - Käyttäjä voi antaa sovellukselle *päivittäisiä kysymyksiä*, jotka sovellus tallentaa _Tehty_
 - Sovellus kysyy käyttäjän määrittelemät kysymykset käyttäjältä tämän niin toivoessa ja tallentaa käyttäjän vastaukset _Tehty_
-- Käyttäjä voi arkistoida kysymyksiä, jolloin niitä ei enää esitetä käyttäjälle.
-- Käyttäjä voi katsella aikaisempia vastauksia _Puuttuu visuaalisesta käyttöliittymästä_
+- Käyttäjä voi arkistoida kysymyksiä, jolloin niitä ei enää esitetä käyttäjälle. _Tehty_
+- Käyttäjä voi katsella aikaisempia vastauksia _Tehty_
 - Visuaalinen käyttöliittymä _Tehty_
 - Pysyväistallennus _Tehty_
 

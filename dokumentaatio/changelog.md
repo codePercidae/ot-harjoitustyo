@@ -15,3 +15,9 @@
 - ohjelmalla nyt visuaalinen käyttöliittymä
 - aikaisempien vastauksien katselu ei vielä mahdollista käyttöliittymämuutoksen vuoksi
 - testikattavuutta lisätty
+
+## viikko 6
+
+-käyttäjä voi jälleen katsella kysymyksien vastauksia
+-käyttäjä voi arkistoida kysymyksiä
+-testikattavauutta lisätty

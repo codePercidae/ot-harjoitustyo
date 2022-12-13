@@ -19,4 +19,5 @@
 |  9.12.|   1  |Lisää epätoivoa|
 | 11.12.|   2  |Gui toimii ja lisää toiminnallisuutta|
 | 12.12.|   3  |Lisää toiminnallisuutta ja testejä|
-|  yht  |  28  |  |
+| 13-12.|   3  |Koodin siistimistä ja dokumentointia|
+|  yht  |  31  |  |
