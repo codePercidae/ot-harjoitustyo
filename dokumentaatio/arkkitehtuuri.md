@@ -1,5 +1,10 @@
 # Arkkitehtuuri
 
+## Rakenne
+Koodin rakenne on seuraava:
+
+![Pakkausrakenne](./kuvat/pakkauskaavio.png)
+
 ## Sovelluslogiikka
 
 Sovelluslogiikan muodostaa pitkälti luokat [DailyQuestionsApp](https://github.com/codePercidae/ot-harjoitustyo/blob/main/src/daily_questions_app.py) ja [QuestionRepository](https://github.com/codePercidae/ot-harjoitustyo/blob/main/src/question_repository.py).
