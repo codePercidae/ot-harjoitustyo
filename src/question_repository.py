@@ -7,7 +7,7 @@ from initialize_database import init_database
 class QuestionRepository:
 
     """Luokka tietokannan hallinnoinnille.
-    
+
     Attributes:
         connection: connection olento jolla ollaan yhteydessä tietokantaan
     """
@@ -19,10 +19,10 @@ class QuestionRepository:
 
     def add_question(self, question):
         """Lisää kysymyksen tietokantaan, jos lisäys onnistuu palauttaa True, muutoin False.
-        
+
         Kysymyksen lisääminen tapahtuu ensiksi lisäämällä kysymys Questions tauluun, jossa sille
-        määritellään yksilöllinen id. Tämän jälkeen luodaan uusi taulu nimellä Question_'id', jossa id on
-        Questions taulun määrittelemä yksilöivä luku.
+        määritellään yksilöllinen id. Tämän jälkeen luodaan uusi taulu nimellä Question_'id',
+        jossa id on Questions taulun määrittelemä yksilöivä luku.
 
         Questions_id taululla on rivit:
             id: rivin yksilöivä luku
@@ -47,7 +47,7 @@ class QuestionRepository:
 
     def get_questions(self):
         """Luo tupleista koostuvan listan aktiivisista kysymyksistä ja palauttaa sen.
-        
+
         Lista on muotoa [(id, question)]
         """
 
@@ -57,8 +57,9 @@ class QuestionRepository:
         return [(row["id"], row["question"]) for row in rows]
 
     def deactive(self, question_id):
-        """Arkistoi kysymyksen, eli muuttaa Questions taulusta kysymyksen active sarakkeen tilaan False.
-        
+        """Arkistoi kysymyksen, eli muuttaa Questions taulusta kysymyksen
+        active sarakkeen tilaan False.
+
         Args:
             question_id: kysymyksen yskilöivä luku
         """
@@ -71,7 +72,7 @@ class QuestionRepository:
     def new_grade(self, question_id, grade):
         """Luo uuden rivin kysymykseen yhdistettyyn tauluun ja asettaa sinne nykyisen päivämäärän,
         sekä käyttäjän antaman arvosanan.
-        
+
         Args:
             question_id: kysymyksen yksilöivä luku
             grade:käyttäjän antama arvosana
@@ -84,7 +85,7 @@ class QuestionRepository:
 
     def get_values(self, question_id):
         """Palauttaa kysymykseen yhdistetystä taululsta 7 viimeisintä arvosanaa listana.
-        
+
         Args:
             question_id: kysymyksen yksilöivä luku
         """
@@ -96,5 +97,5 @@ class QuestionRepository:
 
     def initialize_database(self):
         """Tyhjentää ja alustaa tietokannan"""
-        
+
         init_database()

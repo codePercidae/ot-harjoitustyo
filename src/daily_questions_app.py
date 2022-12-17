@@ -6,13 +6,13 @@ from ui.status_interface import StatusInterface
 class DailyQuestionsApp:
 
     """Ohjelman pääluokka joka vastaa logiikasta.
-    
-    Attributes: 
+
+    Attributes:
         repository: Linkki tietokannan hallintaan
         main_gui: Käyttöliittymän alkunäkymä
         grade_gui: Kysymysten arvioinnin näkymä
         status_gui: Kysymysten vastauksien tarkastelun näkymä
-    
+
     """
 
     def __init__(self) -> None:
@@ -28,9 +28,9 @@ class DailyQuestionsApp:
 
     def new_question(self, question):
         """Välittää tietokannan hallinalle uuden kysymyksen.
-        
+
         Jos kysymys on 0 merkkiä pitkä tai aktiivisia kysymykisä on jo 5, palauttaa False
-        
+
         Muutoin riippuen onnistuuko kysymyksen talletus, palauttaa False tai True
         """
 
@@ -52,7 +52,7 @@ class DailyQuestionsApp:
 
     def transmit_answers(self, question_id):
         """Välittää kysymyksen vastaukset tietokannan hallinnalta.
-        
+
         Args:
             question_id: kysymyksen identifioiva luku
         """
@@ -61,10 +61,10 @@ class DailyQuestionsApp:
 
     def grade_question(self, question_id, grade):
         """Välittää kysymyksen uuden vastauksen tietokannan hallinnalle.
-        
+
         Jos vastaus ei ole luku välillä 1-10, palauttaa False, muutoin True
-        
-        Args: 
+
+        Args:
             question_id: kysymyksen identifioiva luku
             grade: uusi vastaus
         """
@@ -76,7 +76,7 @@ class DailyQuestionsApp:
 
     def archive(self, question_id):
         """Arkistoi aktiivisen kysymyksen.
-        
+
         Args:
             question_id: kysymyksen identifioiva luku
         """
