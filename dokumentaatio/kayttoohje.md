@@ -2,6 +2,12 @@
 
 Lataa projektin viimeisimmän [releasen](https://github.com/ohjelmistotekniikka-hy/python-todo-app/releases) lähdekoodi valitsemalla _Assets_-osion alta _Source code_.
 
+## Konfigurointi
+Tallennukseen käytettävän tiedoston nimeä voi konfiguroida .env tiedostossa jonka rakenne on seuraava:
+```
+DATABASE_FILE=database.sqlite
+```
+
 ## Ohjelman käynnistäminen
 
 Ennen ohjelman käynnistämistä, asenna riippuvuudet komennolla:
