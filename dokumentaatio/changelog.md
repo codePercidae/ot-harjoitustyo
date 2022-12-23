@@ -21,3 +21,6 @@
 -käyttäjä voi jälleen katsella kysymyksien vastauksia
 -käyttäjä voi arkistoida kysymyksiä
 -testikattavauutta lisätty
+
+## viikko 7
+- käyttäjä voi konfiguroida tarvittavien tiedostojen nimet ja sijainnit
