@@ -20,4 +20,6 @@
 | 11.12.|   2  |Gui toimii ja lisää toiminnallisuutta|
 | 12.12.|   3  |Lisää toiminnallisuutta ja testejä|
 | 13-12.|   3  |Koodin siistimistä ja dokumentointia|
+| 23.12.|   3  |Konfiguraatioiden korjailua ja dokumentaatio|
+| 25.12.|   2  |Dokuemntaatio|
 |  yht  |  31  |  |
