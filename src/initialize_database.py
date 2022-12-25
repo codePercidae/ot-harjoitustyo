@@ -1,5 +1,6 @@
 from database_connection import get_database_connection
 
+
 def _create_table(connection):
     """Luo Questions taulun tietokantaan jolla on rivit
         id: kysymyksen yksilöllinen tunniste
@@ -11,6 +12,7 @@ def _create_table(connection):
     cursor.execute(
         "CREATE TABLE IF NOT EXISTS Questions (id INTEGER PRIMARY KEY, Question TEXT, Active BOOL)")
     connection.commit()
+
 
 def _remove_database(connection):
     """Poistaa kaikki taulut tietokannasta"""
@@ -24,6 +26,7 @@ def _remove_database(connection):
             cursor.execute(f"DROP TABLE IF EXISTS Question_{question_id}")
         cursor.execute("DROP TABLE Questions")
         connection.commit()
+
 
 def init_database():
     """Tyhjentää tietokannan ja alustaa sen"""

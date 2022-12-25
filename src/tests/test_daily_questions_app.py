@@ -21,4 +21,3 @@ class Testapp(unittest.TestCase):
     def test_valid_grade_return_true(self):
         self.app.new_question("New question")
         self.assertEqual(self.app.grade_question("1", "1"), True)
-

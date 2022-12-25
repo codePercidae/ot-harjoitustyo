@@ -1,5 +1,6 @@
 from daily_questions_app import DailyQuestionsApp
 
+
 def main():
     """Erillinen pääohjelma joka käynnistää kokonaisuuden."""
 

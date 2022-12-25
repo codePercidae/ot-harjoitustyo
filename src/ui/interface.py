@@ -3,7 +3,6 @@ from tkinter import messagebox
 
 
 class Interface:
-    
 
     def __init__(self, parent) -> None:
         self.root = tk.Tk()
@@ -38,7 +37,8 @@ class Interface:
         self.insert_question = tk.Label(
             self.root, text="Or give a new daily question.", pady=10)
 
-        self.new_question = tk.Entry(self.root, textvariable=self._question_var)
+        self.new_question = tk.Entry(
+            self.root, textvariable=self._question_var)
 
         self.submit_btn = tk.Button(
             self.root, text="add question", command=self._store_entry, pady=10)

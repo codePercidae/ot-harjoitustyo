@@ -3,6 +3,7 @@ from ui.grade_interface import GradeInterface
 from ui.interface import Interface
 from ui.status_interface import StatusInterface
 
+
 class DailyQuestionsApp:
 
     """Ohjelman pääluokka joka vastaa logiikasta.
