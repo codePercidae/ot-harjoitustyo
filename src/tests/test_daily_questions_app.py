@@ -11,6 +11,9 @@ class Testapp(unittest.TestCase):
     def test_zero_length_question_not_accepted(self):
         self.assertEqual(self.app.new_question(""), False)
 
+    def test_valid_question_stored_succesfully(self):
+        self.assertEqual(self.app.new_question("Another question"), True)
+
     def test_unvalid_grade_return_false(self):
         self.app.new_question("New question")
         self.assertEqual(self.app.grade_question("1", "0"), False)
